@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="js/script.js"></script>
+    <title>Calculadora</title>
+</head>
+<body>  
+    <div class="background-gradient">
+      <div class="outer-container">
+        <div class="social-icons">
+          <a href="https://www.instagram.com/adriana.olliv/" target="_blank"><i class='fab fa-instagram'></i></a>
+          <a href="https://www.facebook.com/profile.php?id=100002977715486&locale=pt_BR" target="_blank"><i class='fab fa-facebook-square'></i></i></a>
+          <a href="https://www.linkedin.com/in/adriana-oliveira-160a1399/" target="_blank"><i class='fab fa-linkedin'></i></a>                    
+        </div>
+      </div>
+      <h1>Adriana Oliveira</h1>
+
+      <div class="calculadora">
+        <h2>Calculadora</h2>
+        <p id="resultado">
+            <table>
+                <tr>
+                  <td><button class="button" onclick="clean()">C</button></td>               
+                  <td><button class="button" onclick="back()">&lt;</button></td> 
+                  <td><button class="button" onclick="insert('/')">/</button></td>                         
+                  <td><button class="button" onclick="insert('*')">*</button></td>
+                </tr>
+                <tr>
+                  <td><button class="button" onclick="insert('7')">7</button></td>                
+                  <td><button class="button" onclick="insert('8')">8</button></td>                
+                  <td><button class="button" onclick="insert('9')">9</button></td>               
+                  <td><button class="button" onclick="insert('-')">-</button></td>
+                </tr>
+                <tr>
+                  <td><button class="button" onclick="insert('4')">4</button></td>               
+                  <td><button class="button" onclick="insert('5')">5</button></td>                
+                  <td><button class="button" onclick="insert('6')">6</button></td>                
+                  <td><button class="button" onclick="insert('+')">+</button></td>
+                </tr>
+                <tr>
+                  <td><button class="button" onclick="insert('1')">1</button></td>                
+                  <td><button class="button" onclick="insert('2')">2</button></td>                
+                  <td><button class="button" onclick="insert('3')">3</button></td>
+                  <td rowspan="2"><button class="button" style="height:106px;" onclick="calculate()">=</button></td>
+                </tr>
+                <tr>
+                  <td colspan="2"><button class="button"  style="width:106px;" onclick="insert('0')">0</button></td>                       
+                  <td><button class="button" onclick="insert('.')">.</button></td>
+                </tr>
+            </table>                      
+      </div>
+    </div>
+
+    <footer>      
+      <p class="footer-text" >Desenvolvido por Adriana Ribeiro Oliveira durante curso de Frontend <a href="https://sammyfreitas.github.io/portfolioSite/" target="_blank" class="link-color"> Anthony de Freitas</a>.</p>
+      <p class="footer-text" >Todos os direitos reservados - 2023  &copy;</p>
+    </footer>
+  </body>
+</html>
